@@ -360,6 +360,7 @@ body {
     align-items: center;
     padding: 0 var(--size-600) 0 1.75rem;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    container-type: size;
 }
 .dashboard-profile {
     display: flex;
@@ -368,6 +369,10 @@ body {
     gap: var(--size-700);
     font-size: var(--fs-primary-heading);
     font-weight: var(--fw-bold);
+}
+.dashboard-profile h3{
+    /*font-size: 5cqi*/
+    font-size: clamp(14px, 2cqi, 20px);
 }
 .dashboard-respect {
     display: flex;
