@@ -307,7 +307,7 @@ body {
     fill: var(---clr-primary-200);
     stroke: var(---clr-primary-200);
 }
-.nav-item:focus {
+.nav-item:active {
     height: 3.625rem;
     background-color: var(---clr-neutral-300);
     color: var(---clr-accent-800);
