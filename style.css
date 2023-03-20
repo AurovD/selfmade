@@ -323,6 +323,22 @@ body {
 .nav-item:hover {
     background-color: #fff;
 }
+.nav-item:active {
+    height: 3.625rem;
+    background-color: var(---clr-neutral-300);
+    color: var(---clr-accent-800);
+    margin-bottom: var(--size-500);
+}
+.nav-item:active svg {
+    fill: var(---clr-accent-800);
+    stroke: var(---clr-accent-800);
+}
+.nav-item:not(:first-child):active {
+    margin-top: -var(--size-500);
+}
+.nav-item:active {
+    background-color: #fff;
+}
 .logout {
     height: 4.313rem;
     border-top: 1px solid rgba(0, 0, 0, .1);
