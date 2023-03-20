@@ -307,11 +307,13 @@ body {
     fill: var(---clr-primary-200);
     stroke: var(---clr-primary-200);
 }
-.nav-item:active {
-    height: 3.625rem;
-    background-color: var(---clr-neutral-300);
-    color: var(---clr-accent-800);
-    margin-bottom: var(--size-500);
+@media(hover: hover) and (pointer: fine) {
+    .nav-item {
+        height: 3.625rem;
+        background-color: var(---clr-neutral-300);
+        color: var(---clr-accent-800);
+        margin-bottom: var(--size-500);
+    }
 }
 .nav-item:hover svg, .nav-item:active svg {
     fill: var(---clr-accent-800);
