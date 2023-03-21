@@ -292,7 +292,7 @@ body {
     margin-top: 0;
     border-radius: var(--size-300);
     cursor: pointer;
-    transition: height 1s, margin-bottom 1s, margin-top 1s ease-in-out;
+    /*transition: height 1s, margin-bottom 1s, margin-top 1s ease-in-out;*/
 }
 .nav-item svg {
     fill: var(---clr-neutral-800);
@@ -307,13 +307,12 @@ body {
     fill: var(---clr-primary-200);
     stroke: var(---clr-primary-200);
 }
-@media(hover: hover) and (pointer: fine) {
-    .nav-item {
-        height: 3.625rem;
-        background-color: var(---clr-neutral-300);
-        color: var(---clr-accent-800);
-        margin-bottom: var(--size-500);
-    }
+/*@media(hover: hover) and (pointer: fine) {*/
+.nav-item:hover,  .nav-item:active{
+    height: 3.625rem;
+    background-color: var(---clr-neutral-300);
+    color: var(---clr-accent-800);
+    margin-bottom: var(--size-500);
 }
 .nav-item:hover svg, .nav-item:active svg {
     fill: var(---clr-accent-800);
