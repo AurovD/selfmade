@@ -577,11 +577,11 @@ td:not(:first-child) {
     width: 14.375rem;
     height: 14.375rem;
 }
-.test-box {
-     width: 300px;
-     height: 300px;
-     background-color: #5556D3;
- }
-.test-box:hover, .test-box:active, .test-box:focus {
-    background-color: #2F2F2F;
-}
+/*.test-box {*/
+/*     width: 300px;*/
+/*     height: 300px;*/
+/*     background-color: #5556D3;*/
+/* }*/
+/*.test-box:hover, .test-box:active, .test-box:focus {*/
+/*    background-color: #2F2F2F;*/
+/*}*/
