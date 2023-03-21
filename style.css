@@ -281,18 +281,17 @@ body {
     display: flex;
     flex-direction: column;
     font-weight: var(--fw-regular);
-    /*gap: 40px;*/
 }
 .nav-item {
     display: flex;
     padding-left: 2.438rem;
     align-items: center;
     height: var(--size-500);
+    transition: height 1s, margin-bottom 1s, margin-top 1s ease-in-out;
     margin-bottom: var(--size-900);
     margin-top: 0;
     border-radius: var(--size-300);
     cursor: pointer;
-    transition: height 1s, margin-bottom 1s, margin-top 1s ease-in-out;
 }
 .nav-item svg {
     fill: var(---clr-neutral-800);
