@@ -307,7 +307,6 @@ body {
     fill: var(---clr-primary-200);
     stroke: var(---clr-primary-200);
 }
-/*@media(hover: hover) and (pointer: fine) {*/
 .nav-item:hover{
     height: 3.625rem;
     background-color: var(---clr-neutral-300);
