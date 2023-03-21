@@ -292,7 +292,7 @@ body {
     margin-top: 0;
     border-radius: var(--size-300);
     cursor: pointer;
-    /*transition: height 1s, margin-bottom 1s, margin-top 1s ease-in-out;*/
+    transition: height 1s, margin-bottom 1s, margin-top 1s ease-in-out;
 }
 .nav-item svg {
     fill: var(---clr-neutral-800);
