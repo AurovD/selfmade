@@ -578,7 +578,7 @@ td:not(:first-child) {
     height: 14.375rem;
 }
 .test-box {
-     width: 100%;
+     width: 200px;
      height: 100px;
      background-color: #5556D3;
  }
