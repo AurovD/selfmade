@@ -298,7 +298,6 @@ body {
     stroke: var(---clr-neutral-800);
     margin-right: var(--size-200);
 }
-
 .nav-item[data-type="premium"] {
     color: var(---clr-primary-200);
 }
@@ -306,20 +305,20 @@ body {
     fill: var(---clr-primary-200);
     stroke: var(---clr-primary-200);
 }
-.nav-item:hover, .nav-item:active, .nav-item:focus, .nav-item-active {
+.nav-item-active {
     height: 3.625rem;
     background-color: var(---clr-neutral-300);
     color: var(---clr-accent-800);
     margin-bottom: var(--size-500);
 }
-.nav-item:hover svg, .nav-item:active svg, .nav-item:focus svg {
+nav-item-active svg {
     fill: var(---clr-accent-800);
     stroke: var(---clr-accent-800);
 }
-.nav-item:not(:first-child):hover, .nav-item:not(:first-child):active, .nav-item:not(:first-child):focus {
+ nav-item-active:not(:first-child) {
     margin-top: -var(--size-500);
 }
-.nav-item:hover, .nav-item:active, .nav-item:focus {
+ .nav-item-active {
     background-color: #fff;
 }
 .logout {
@@ -335,10 +334,10 @@ body {
     stroke: var(---clr-neutral-800);
     margin-right: var(--size-200);
 }
-.logout:hover, .logout:active, .logout:focus {
+.logout, .nav-item-active {
     color: var(---clr-accent-800);
 }
-.logout:hover svg, .logout:active svg, .logout:focus svg  {
+.nav-item-active svg  {
     fill: var(---clr-accent-800);
     stroke: var(---clr-accent-800);
 }

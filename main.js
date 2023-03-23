@@ -1,7 +1,7 @@
 const primaryHeader = document.querySelector(".primary-header ");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".navigation");
-const navItem = document.querySelector(".nav-item");
+const navItems = document.querySelectorAll(".nav-item-inactive");
 
 navToggle.addEventListener("click", () => {
     primaryNav.hasAttribute("data-visible") ?
@@ -11,13 +11,26 @@ navToggle.addEventListener("click", () => {
     primaryHeader.toggleAttribute("data-overlay");
 });
 
+
+console.log(navItems);
+function setActiveElementOnClick(elements) {
+    elements.forEach((element, index) => {
+        element.addEventListener('click', () => {
+            console.log("click")
+            // Remove "active" class from all elements
+            elements.forEach((el) => {
+                el.classList.remove('nav-item-active');
+            });
+            // Add "active" class to clicked element
+            element.classList.add('nav-item-active');
+        });
+    });
+}
 function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 };
 
-if (isMobileDevice()) {
-    alert("its mobile")
-} else {
-    console.log("its desktop")
-}
+// if (isMobileDevice()) {
+    setActiveElementOnClick(navItems);
+// }
 
