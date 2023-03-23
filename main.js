@@ -12,11 +12,9 @@ navToggle.addEventListener("click", () => {
 });
 
 
-console.log(navItems);
 function setActiveElementOnClick(elements) {
     elements.forEach((element, index) => {
         element.addEventListener('click', () => {
-            console.log("click")
             // Remove "active" class from all elements
             elements.forEach((el) => {
                 el.classList.remove('nav-item-active');
@@ -26,11 +24,5 @@ function setActiveElementOnClick(elements) {
         });
     });
 }
-function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
-
-// if (isMobileDevice()) {
-    setActiveElementOnClick(navItems);
-// }
+setActiveElementOnClick(navItems);
 

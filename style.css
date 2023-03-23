@@ -305,20 +305,20 @@ body {
     fill: var(---clr-primary-200);
     stroke: var(---clr-primary-200);
 }
-.nav-item-active {
+.nav-item-active:not(.logout) {
     height: 3.625rem;
     background-color: var(---clr-neutral-300);
     color: var(---clr-accent-800);
     margin-bottom: var(--size-500);
 }
-nav-item-active svg {
+.nav-item-active svg {
     fill: var(---clr-accent-800);
     stroke: var(---clr-accent-800);
 }
- nav-item-active:not(:first-child) {
+.nav-item-active:not(:first-child) {
     margin-top: -var(--size-500);
 }
- .nav-item-active {
+.nav-item-active:not(.logout) {
     background-color: #fff;
 }
 .logout {
@@ -334,7 +334,7 @@ nav-item-active svg {
     stroke: var(---clr-neutral-800);
     margin-right: var(--size-200);
 }
-.logout, .nav-item-active {
+.logout.nav-item-active {
     color: var(---clr-accent-800);
 }
 .nav-item-active svg  {
@@ -542,8 +542,7 @@ th, td {
 th:first-child {
     border-top-left-radius: 15px;
     text-align: left;
-    flex-shrink: 0;
-    flex: 5 0 0px;
+    flex: 5 0 0;
 }
 th:last-child {
     border-top-right-radius: 15px;
