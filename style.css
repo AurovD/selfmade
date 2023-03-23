@@ -130,12 +130,12 @@ body {
 }
 
 .wrapper {
-    /*--max-width: 76.563rem;*/
-    /*--padding: var(--fs-600);*/
+    --max-width: 76.563rem;
+    --padding: var(--fs-600);
 
-    /*width: min(var(--max-width), 100% - (var(--padding) * 2));*/
-    /*margin-inline: auto;*/
-    /*padding-right: 1.563rem;*/
+    width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+    padding-right: 1.563rem;
     /*background: #00aa4b;*/
 }
 
@@ -268,9 +268,9 @@ body {
 /*main*/
 
 .main-wrapper {
-    /*display: flex;*/
-    /*margin-top: var(--size-500);*/
-    /*gap: var(--size-800);*/
+    display: flex;
+    margin-top: var(--size-500);
+    gap: var(--size-800);
 }
 .navigation {
     width: 14.625rem;
@@ -578,8 +578,8 @@ td:not(:first-child) {
     height: 14.375rem;
 }
 .test-box {
-     width: 200px;
-     height: 100px;
+     width: 300px;
+     height: 300px;
      background-color: #5556D3;
  }
 .test-box:hover, .test-box:active, .test-box:focus {
